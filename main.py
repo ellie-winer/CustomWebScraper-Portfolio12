@@ -65,13 +65,8 @@ data = {
     "Three Point Percentage": [", ".join(three_point_percentage_leaders), ", ".join(team_three_point_percentage_leaders)],
 }
 
-# Create a DataFrame to store the data
 df = pd.DataFrame(data)
-
-# Save the DataFrame to a CSV file
 df.to_csv('nba_top_5_players_teams.csv', index=False)
-
-# Close the driver
 driver.quit()
 
 print("Data scraped and saved to nba_top_5_players_teams.csv")
